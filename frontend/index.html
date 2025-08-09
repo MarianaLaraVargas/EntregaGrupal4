@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Inventory</title>
+    <script>
+        async function fetchData() {
+            const res = await fetch("/api/cleaned");
+            const data = await res.json();
+            const table = document.getElementById("inventory");
+            table.innerHTML = "<tr><th>ID</th><th>Name</th><th>Quantity</th></tr>";
+            data.forEach(item => {
+                table.innerHTML += `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.quantity}</td></tr>`;
+            });
+        }
+        window.onload = fetchData;
+    </script>
+</head>
+<body>
+    <h1>Cleaned Gym Inventory</h1>
+    <table id="inventory" border="1"></table>
+</body>
+</html>
