@@ -96,4 +96,4 @@ Abre el archivo `frontend/index.html` en tu navegador para visualizar los datos 
 
 ## 🧩 Autor
 
-Proyecto creado por Luis Rojas para el curso de Programación Web (Entrega Grupal #4)
+Proyecto creado por Luis Rojas, Mariana Lara y Manfred Leon para el curso de Programación Web (Entrega Grupal #4)
